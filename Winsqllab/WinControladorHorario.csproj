@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C05381B2-AF77-4429-BBC5-CB008D933E77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Winsqllab</RootNamespace>
+    <AssemblyName>Winsqllab</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumno.Designer.cs">
+      <DependentUpon>Alumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asignaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asignaciones.Designer.cs">
+      <DependentUpon>Asignaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuatrimestres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuatrimestres.Designer.cs">
+      <DependentUpon>Cuatrimestres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dias.Designer.cs">
+      <DependentUpon>Dias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grupos.Designer.cs">
+      <DependentUpon>Grupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Horas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horas.Designer.cs">
+      <DependentUpon>Horas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laboratorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laboratorios.Designer.cs">
+      <DependentUpon>Laboratorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Materias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materias.Designer.cs">
+      <DependentUpon>Materias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesores.Designer.cs">
+      <DependentUpon>Profesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Alumno.resx">
+      <DependentUpon>Alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asignaciones.resx">
+      <DependentUpon>Asignaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuatrimestres.resx">
+      <DependentUpon>Cuatrimestres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dias.resx">
+      <DependentUpon>Dias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grupos.resx">
+      <DependentUpon>Grupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horas.resx">
+      <DependentUpon>Horas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laboratorios.resx">
+      <DependentUpon>Laboratorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materias.resx">
+      <DependentUpon>Materias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesores.resx">
+      <DependentUpon>Profesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModeloSql\ClassModeloSql.csproj">
+      <Project>{c5c80cab-7c87-46b1-8fb8-7b133073f14b}</Project>
+      <Name>ClassModeloSql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VistaSql\ClassVistaSql.csproj">
+      <Project>{5ee5eee8-f735-44aa-b0af-30a68f39d2f7}</Project>
+      <Name>ClassVistaSql</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
